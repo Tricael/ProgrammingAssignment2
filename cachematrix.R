@@ -19,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
     if(identical(x,y)){
       message("input matrix is the same as current stored.")
       message("will re-use cached inverse.")
-      ## return(x)
+      return(x)
+      ## return(m_Inv)
     }
     x <<- y
     m_Inv <<- NULL
